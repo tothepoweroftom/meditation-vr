@@ -258,6 +258,10 @@ AFRAME.registerComponent('terrain', {
 
     var terrain = new Terrain(data.detail);
 
+
+
+
+
     terrain.generate(data.sharpness);
 
     var mesh = terrain.toWireframeMesh(data.width, data.increments, data.color);
@@ -278,7 +282,12 @@ AFRAME.registerComponent('terrain', {
 
     this.el.setObject3D('mesh', mesh);
   },
-  tick: function () {},
+  tick: function (time, timeDelta) {
+
+
+    
+ 
+  },
   remove: function () {},
   pause: function () {},
   play: function () {}
